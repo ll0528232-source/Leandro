@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+
+    int anoNascimento, anoAtual, idade, idade2050;
+   
+    printf("Digite O Ano De Nascimento: ");
+    scanf("%d", &anoNascimento);
+    printf("Digite O Ano Atual: ");
+    scanf("%d", &anoAtual);
+
+    idade = anoAtual - anoNascimento;
+    idade2050 = 2050 - anoNascimento;
+     
+    printf("A Sua Idade Atual é: %d\n", idade);
+    printf("A Sua Idade Em 2050, Será De: %d\n", idade2050);
+
+    return 0; 
+}
