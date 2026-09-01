@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+
+    float pesoSacoKl, pesoSacoGm, consumoDiario, consumo5dias; 
+  
+    printf("Digite O Peso Do Caco Em Quilogramas: ");
+    scanf("%f", &pesoSacoKl);
+    printf("Digite A Quantidade Diária De Ração Para Cada Gato, Em Gramas: ");
+    scanf("%f", &consumoDiario);
+
+    pesoSacoGm = pesoSacoKl * 1000;
+    consumo5dias = pesoSacoGm - ( consumoDiario * 2 ) * 5;
+    
+    printf("Em 5 Dias Restará: %.2f Gramas De Ração\n", consumo5dias);
+
+    return 0;
+}
