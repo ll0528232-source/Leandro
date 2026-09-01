@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+
+    float saldoInicial = 0;
+    float cpmf = 0.38;
+    float deposito, cheque1, cheque2, saldoAtual;
+
+    printf("Digite O Valor Do Depósito: ");
+    scanf("%f", &deposito);
+
+    printf("Digite O Valor Do Primeiro Cheque: ");
+    scanf("%f", &cheque1);
+    printf("Digite O Valor Do Segundo Cheque: ");
+    scanf("%f", &cheque2);
+    
+    saldoAtual = saldoInicial + deposito - cheque1 - cheque2 - ( cheque1 * cpmf / 100) - ( cheque2 * cpmf / 100 );  
+    
+    printf("Seu Saldo Atual É De: %.2f\n", saldoAtual);
+    return 0;
+}
