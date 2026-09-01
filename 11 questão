@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+    float numero, numeroQuadrado, numeroCubo, raizQuadrada, raizCubica; 
+
+    printf("Digite Um Número Maior Que 0: ");
+    scanf("%f", &numero);
+
+    if (numero > 0) {
+    numeroQuadrado = numero * numero;
+    numeroCubo = numero * numero * numero;
+    raizQuadrada = sqrt(numero);
+    raizCubica = cbrt(numero);
+
+    printf("O Número Ao Quadrado Corresponde A: %.2f\n", numeroQuadrado);
+    printf("O Número Ao Cubo Corresponde A: %.2f\n", numeroCubo); 
+    printf("A Raiz Quadrada Corresponde A: %.2f\n", raizQuadrada);
+    printf("A Raiz Cúbica Corresponde A: %.2f\n", raizCubica);
+} else {
+    printf("Número Inválido.\n ");
+}
+   return 0;
+}
