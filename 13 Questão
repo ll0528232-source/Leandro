@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+
+float pe, polegadas, jarda, milha;
+
+printf("Digite O Valor Em Pés: ");
+scanf("%f", &pe);
+
+polegadas = pe * 12;
+jarda = pe / 3;
+milha = (pe / 3) / 1760;
+
+printf("O Valor Em Polegadas É: %.2f\n", polegadas);
+printf("O Valor Em Jardas É: %.2f\n", jarda);       
+printf("O Valor Em Milhas É: %.2f\n", milha);       
+
+return 0;
+}
