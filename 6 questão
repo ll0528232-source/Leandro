@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main () {
+
+    float salariobase, gratificacao, imposto, salarioreceber;
+
+    printf("Informe O Salario Base: ");
+    scanf("%f", &salariobase);
+     
+    gratificacao  = salariobase * 0.05;
+    imposto =  salariobase *  0.07;
+
+    salarioreceber = salariobase + gratificacao - imposto;
+
+    printf("Salário A Receber = %.2f", salarioreceber);
+
+    return 0;
+}
