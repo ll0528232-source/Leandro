@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+
+    float precoFabrica, lucroDistribuidorPorcento, lucroDistribuidor, impostoFabricaPorcento, impostoFabrica, valorFinal;
+
+    printf("Digite O Valor Do Preço De Fábrica: ");
+    scanf("%f", &precoFabrica);
+    printf("Digite O Percentual De Lucro Do Distribuidor: ");
+    scanf("%f", &lucroDistribuidorPorcento);
+    printf("Digite O Percentual De Impostos Sobre O Valor De Fábrica: ");
+    scanf("%f", &impostoFabricaPorcento);
+
+    lucroDistribuidor = (precoFabrica * lucroDistribuidorPorcento) / 100;
+    impostoFabrica = (precoFabrica * impostoFabricaPorcento) / 100;
+    valorFinal = lucroDistribuidor + impostoFabrica + precoFabrica;
+
+    printf("O Valor Correspondente Ao Lucro Do Distribuidor, É De: %.2f\n", lucroDistribuidor);
+    printf("O Valor Corresponde Aos Impostos De Fábrica, ´R De: %.2f\n", impostoFabrica);
+    printf("O Preço Final De Veículo, É De: %.2f\n", valorFinal);
+
+    return 0;
+}
